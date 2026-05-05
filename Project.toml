@@ -1,0 +1,13 @@
+name = "PythonASAP"
+uuid = "09eb1289-ea3b-48bf-988a-55814afb58df"
+authors = ["Éric Thiébaut <eric.thiebaut@univ-lyon1.fr> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
