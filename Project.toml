@@ -1,9 +1,19 @@
 name = "PythonASAP"
 uuid = "09eb1289-ea3b-48bf-988a-55814afb58df"
-authors = ["Éric Thiébaut <eric.thiebaut@univ-lyon1.fr> and contributors"]
 version = "0.1.0"
+authors = ["Éric Thiébaut <eric.thiebaut@univ-lyon1.fr> and contributors"]
+
+[deps]
+ASAP = "d7a85fb2-cd42-4b94-9561-afde44875000"
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+TypeUtils = "c3b1956e-8857-4d84-9b79-890df85b1e67"
 
 [compat]
+ASAP = "0.2"
+PythonCall = "0.9.31"
+Random = "<0.0.1, 1"
+TypeUtils = "1.14.0"
 julia = "1.5"
 
 [extras]
