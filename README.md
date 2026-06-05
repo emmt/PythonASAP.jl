@@ -1,4 +1,5 @@
-# PythonASAP [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://emmt.github.io/PythonASAP.jl/stable/) [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://emmt.github.io/PythonASAP.jl/dev/) [![Build Status](https://github.com/emmt/PythonASAP.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/emmt/PythonASAP.jl/actions/workflows/CI.yml?query=branch%3Amain) [![Coverage](https://codecov.io/gh/emmt/PythonASAP.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/emmt/PythonASAP.jl)
+# PythonASAP
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://emmt.github.io/PythonASAP.jl/stable/) [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://emmt.github.io/PythonASAP.jl/dev/) [![Build Status](https://github.com/emmt/PythonASAP.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/emmt/PythonASAP.jl/actions/workflows/CI.yml?query=branch%3Amain) [![Coverage](https://codecov.io/gh/emmt/PythonASAP.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/emmt/PythonASAP.jl)
 
 `PythonASAP` is a thin layer over [`ASAP`](https://github.com/emmt/ASAP.jl) to facilitate the
 use of `ASAP` from Python.
