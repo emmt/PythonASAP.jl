@@ -141,7 +141,9 @@ To create an ASAP sparse structure the inputs are:
 # Setup.
 import numpy as np
 from juliacall import Main as jl, convert as jlconvert
-jl.sevals("using Revise, ASAP, PythonASAP")
+jl.seval("using Pkg") # load Julia's package manager
+jl.Pkg.activate("asap+python") # activate Julia environment
+jl.seval("using Revise, ASAP, PythonASAP")
 jl_asap = jl.PythonASAP # alias
 
 # Create the mask.
@@ -168,7 +170,7 @@ mdl1 = jl_asap.learn("inv(R'*R)", S, dataset)
 mdl2 = jl_asap.learn("inv(R*R')", S, dataset)
 ```
 
-The model `mdl1` (resp. `m2`) corresponds to `M ≈ inverse(transpose(R)⋅R)` (resp. `M ≈
+The model `mdl1` (resp. `mdl2`) corresponds to `M ≈ inverse(transpose(R)⋅R)` (resp. `M ≈
 inverse(R⋅transpose(R))`) with `M` the target matrix and `R` a sparse triangular matrix
 whose structure is that of `S`. Argument `dataset` is a sequence of data frames.
 
